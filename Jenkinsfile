@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('AdvanceJavaFive/LibraryMangBackend') {
-                    sh "\"C:\\.Net & Java Software\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn.cmd\" clean package"
+                    bat "\"C:\\.Net & Java Software\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn.cmd\" clean package"
                 }
             }
 
