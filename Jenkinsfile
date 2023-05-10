@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    environment {
+        JAVA_HOME = 'C:\\Users\\akashjindal\\jdk-11.0.2'
+        PATH = "${JAVA_HOME}\\bin:${env.PATH}"
+    }
+    
     stages {
         stage('checkout') {
             steps {
