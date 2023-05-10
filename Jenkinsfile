@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                bat 'AdvanceJavaFive\\LibraryMangBackend\\mvnw.cmd clean package'
+                bat 'mvnw.cmd clean package'
             }
         }
     }
