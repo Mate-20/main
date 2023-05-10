@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh "mvn -f AdvanceJavaFive/LibraryMangBackend/pom.xml clean package"
+                bat 'C:\\.Net&JavaSoftware\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin'
             }
         }
     }
