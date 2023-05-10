@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                cmd 'C:\\.Net&JavaSoftware\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn'
+                bat 'C:\\.Net&JavaSoftware\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn.cmd package'
             }
         }
     }
